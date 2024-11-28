@@ -33,15 +33,17 @@ improv_serial:
 
 i2c:
 -  id: bus_a
-   sda: 21
-   scl: 22
+   sda: GPIO5
+   scl: GPIO6
    scan: true
 
 light:
-  - platform: status_led
+  - platform: neopixelbus
+    type: RGB
+    variant: WS2811
+    pin: GPIO2
+    num_leds: 1
     name: ESP32 LED
-    pin: GPIO14
-    internal: False
     restore_mode: ALWAYS_OFF
 
 number:
