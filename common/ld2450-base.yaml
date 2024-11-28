@@ -611,12 +611,12 @@ sensor:
 uart:
   id: uart_bus
   tx_pin: 
-    number: GPIO17
+    number: GPIO43
     mode:
       input: true
       pullup: true
   rx_pin: 
-    number: GPIO16
+    number: GPIO44
     mode:
       input: true
       pullup: true
